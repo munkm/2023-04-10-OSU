@@ -198,7 +198,7 @@
                         <div id="left">
                             <font size=3>
                                 <b>My work:</b> Parametric study of design to maximize $^{99}$Mo </br>
-                                <b>Result:</b> Design patented, startup created, <a href="https://www.nrc.gov/info-finder/nonpower/nw-medical-isotopes.html">construction permit granted</a>
+                                <b>Result:</b> Design patented, startup created </br>
                                 <b>Skills:</b> Reading/Parsing outputs, identifying relations, matlab scripting</br>
                             </font>
                         <img height="300" src="./images/patent/patenttitle.png">
@@ -209,32 +209,6 @@
                         <font size="2">
                         <a href="https://patents.google.com/patent/US20120027152A1/en">https://patents.google.com/patent/US20120027152A1/en</a>
                         </font>
-                    </section>
-                    <section data-background-image="./images/rover/NASA_cropped.png" data-background-size="40%" data-background-position="bottom left">
-                        <div>
-                            <img height="100" src="./images/rover/bgc_logo_big.gif">
-                            <img height="100" src="./images/rover/SUERC-logo.png">
-                        </div>
-                        <div>
-                            <img src="./images/rover/XSAr.jpg" height="300">
-                            <img src="./images/rover/ArAge.jpg" height="300">
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Key Takeaways from the Rover Source</h3>
-                        <div align="left">
-                            <font size="6">
-                                <b>My work:</b> Perform Parametric studies to maximize n flux, minimize shield material</br>
-                                <b>Result:</b> Passive neutron source designed with weight and flux constraints met </br>
-                                <b>Skills:</b> Parametric evaluation, Python scripting, optimization </br>
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <p align="right"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ggr.12170" style="color:black;"><i>Instrumentation Development for In Situ $^{40}$Ar/$^{39}$Ar Geochronology</i>, Morgan, L., Munk, M., et al; Geostandards and Geoanalytical Research 2017</a></p>
-                            <p align="right"><a href="http://munkm.github.io/papers/munk_mc15.pdf" style="color:black;"><i>Design and feasibility study of a compact neutron source for extraterrestrial geochronology applications</i>, Munk, M., Morgan, L., et. al; ANS M&C 2015</a></p>
-                        </font>
-                            </footer>
                     </section>
                 </section>
                 <section data-transition="convex">
@@ -341,6 +315,56 @@
                     <section>
                         <h4>An Adjoint Problem</h4>
                         <img src="./images/omega/adjoint_problem.svg" height="600">
+                    </section>
+                    <section>
+                        <small>
+                        <p>The forward neutron transport equation:</p>
+                        \[
+                        \begin{multline}
+                        \hat\Omega \cdot \nabla \psi
+                                (\vec {r} ,E,\:\hat\Omega)+\Sigma _{ t }
+                                (\vec{r},E)\psi (\vec { r } ,E,\:\hat\Omega) = \\
+                                \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(E'\rightarrow E,
+                                \hat\Omega'\rightarrow\hat\Omega)\psi (\vec { r } ,E',\: \hat\Omega')dE'
+                                \:d\hat\Omega' + q_{e}(\vec { r } ,E, \:\hat\Omega).
+                        \end{multline}
+                        \]
+                        <p>The adjoint neutron transport equation:</p>
+                        \[
+                        \begin{multline}
+                        \hat\Omega \cdot \nabla \color{teal}{\psi^{\dagger}}
+                                (\vec {r} ,E,\:\hat\Omega)+\Sigma _{ t }
+                                (\vec{r},E)\color{teal}{\psi^{\dagger}}  (\vec { r } ,E,\:\hat\Omega)
+                               = \\
+                               \int _{ 4\pi  } \int _{ 0 }^{ \infty  } \Sigma _{ s }(\color{violet}{E\rightarrow E'},
+                               \color{purple}{\hat\Omega\rightarrow\hat\Omega'})\color{teal}{\psi^{\dagger}}  (\vec { r } ,E',\:
+                               \hat\Omega')dE' \:d\hat\Omega' + \color{teal}{q_{e}^\dagger}(\vec { r } ,E,
+                                \:\hat\Omega).
+                        \end{multline}
+                        \]
+                        <p>The adjoint solution can be used to make an importance map for a desired outcome.</p>
+                        <p>An exact adjoint solution can be used to obtain a zero variance Monte Carlo solution.</p>
+                        </small>
+                    </section>
+                    <section>
+                        <h3>Importance and the Adjoint</h3>
+                        <small>
+                            <p align="left">Notation:</p>
+                            $\langle ab \rangle = \int a(P)b(P) dP$
+                            <p align="left">Detector response</p>
+                            $
+                            \begin{align}
+                            R &= \langle \sigma_d \psi \rangle \\
+                              &= \langle q^{\dagger} \psi \rangle \\
+                              &= \langle q \psi^{\dagger} \rangle \\
+                              \end{align}
+                            $
+                            <p align="left">Point source</p>
+                            $q ( \vec{r}, E, \hat{\Omega}) = \delta(\vec{r}-\vec{r_0})\delta(\vec{E}-\vec{E_0})\delta(\vec{\hat{\Omega}}-\vec{\hat{\Omega}_0})$
+                            <font color="purple"><p align="left">Response = adjoint flux</p>
+                            $R = \psi^{\dagger} (r_0, E_0, \Omega_0)$
+                            </font>
+                        </small>
                     </section>
                     <section>
                         <h2>A Simple Labyrinth</h2>
@@ -601,6 +625,34 @@
                     <font size="4">
                         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tools for Transformation: Computational Methods and Modeling in Nuclear Engineering</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://munkm.github.io" property="cc:attributionName" rel="cc:attributionURL">Madicken Munk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/munkm/2023-04-10-OSU" rel="dct:source">https://github.com/munkm/2023-04-10-OSU</a>.
                     </font>
+                </section>
+                <section>
+                    <section data-background-image="./images/rover/NASA_cropped.png" data-background-size="40%" data-background-position="bottom left">
+                        <div>
+                            <img height="100" src="./images/rover/bgc_logo_big.gif">
+                            <img height="100" src="./images/rover/SUERC-logo.png">
+                        </div>
+                        <div>
+                            <img src="./images/rover/XSAr.jpg" height="300">
+                            <img src="./images/rover/ArAge.jpg" height="300">
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Key Takeaways from the Rover Source</h3>
+                        <div align="left">
+                            <font size="6">
+                                <b>My work:</b> Perform Parametric studies to maximize n flux, minimize shield material</br>
+                                <b>Result:</b> Passive neutron source designed with weight and flux constraints met </br>
+                                <b>Skills:</b> Parametric evaluation, Python scripting, optimization </br>
+                            </font>
+                        </div>
+                        <footer align="left">
+                        <font size="2">
+                            <p align="right"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ggr.12170" style="color:black;"><i>Instrumentation Development for In Situ $^{40}$Ar/$^{39}$Ar Geochronology</i>, Morgan, L., Munk, M., et al; Geostandards and Geoanalytical Research 2017</a></p>
+                            <p align="right"><a href="http://munkm.github.io/papers/munk_mc15.pdf" style="color:black;"><i>Design and feasibility study of a compact neutron source for extraterrestrial geochronology applications</i>, Munk, M., Morgan, L., et. al; ANS M&C 2015</a></p>
+                        </font>
+                            </footer>
+                    </section>
                 </section>
 			</div>
 		</div>
