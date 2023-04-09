@@ -213,63 +213,6 @@
                 </section>
                 <section data-transition="convex">
                     <section>
-                        <img height="600" src="./images/general/System1e.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_long.svg">
-                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longa.svg">
-                    </section>
-                    <section>
-                        <img height="500" src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2013/08/WebSideRight.png">
-                    </section>
-                    <section>
-                        <h3>The PB-FHR MK-1 Design</h3>
-                        <div id="right">
-                        <img height="375" src="./images/PBFHR/RC_90cut_Neutronics.svg">
-                        </div>
-                        <div id="left">
-                            <font size="6">
-                            <li>236 MWth core</li>
-                            <li>300 C/HM fueled pebbles, 19.99% enrichment</li>
-                            <li>FLiBe coolant, enriched to 99.999 wt% Li6</li>
-                            <li>Power density 23.0 MW/$m^3$</li>
-                            <li>Buoyant pebble fuel</li>
-                            <li>Online refueling, annular core</li>
-                            <li>Central reflector houses control rod guide tubes</li>
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <br><br>
-                            <p>Andreades, C., Cisneros, A. T., Choi, J. K., Chong, A. Y. K., Fratoni, M., Hong, S.,
-                            ... & Munk, M. (2014). Technical description of the ‘Mark 1’pebble-bed
-                            fluoride-salt-cooled high-temperature reactor (PB-FHR) power plant.
-                            Department of Nuclear Engineering, UC Berkeley, Report UCBTH-14-002.</p>
-                            <p>Andreades, Charalampos, et al. "Design Summary of the Mark-I Pebble-Bed,
-                            Fluoride Salt–Cooled, High-Temperature Reactor Commercial Power Plant."
-                            Nuclear Technology 195.3 (2016): 223-238.</p>
-                        </font></footer>
-                    </section>
-                    <section>
-                        <h3>Central Reflector Lifetime Estimates</h3>
-                        <img height="500" src="./images/PBFHR/StressMises.gif">
-                    </section>
-                    <section>
-                        <h3>Key Takeaways from the Lifetime Estimate</h3>
-                        <div>
-                            <font size="6">
-                                <b>My work:</b> Created a novel tool to couple neutronics/strucutral mechanics</br>
-                                <b>Result:</b> Lifetime estimated, reflector redesigned, Kairos power startup </br>
-                                <b>Skills:</b> Data Cleaning, Automation, Software Development </br>
-                                <b>Potential:</b> Use optimization techniques to converge on core component design that maximizes lifetime
-                            </font>
-                        </div>
-                        <footer align="left">
-                        <font size="2">
-                            <p>Munk, Madicken. An analysis of Radiation-Induced Stresses of a Graphite Central Reflector in a Pebble Bed Fluoride Salt-Cooled Reactor Core. Diss. University of California Berkeley, 2013.</p>
-                        </font></footer>
-                    </section>
-                </section>
-                <section data-transition="convex">
-                    <section>
                         <img height="600" src="./images/general/System1_long.svg">
                         <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longb.svg">
                     </section>
@@ -417,6 +360,19 @@
                         <img class="fragment" height="500" src="./images/omega/Angle3.svg">
                     </section>
                     <section>
+                        <h2>The $\Omega$ Flux</h2>
+                        \[
+                        \phi^{\dagger}_{\Omega}(\vec{r},E) = 
+                        \frac{\int{\psi (\vec{r}, E, \hat{\Omega}) \psi^{\dagger} (\vec{r}, E, \hat{\Omega})}d \hat{\Omega}}
+                        {\int{\psi (\vec{r}, E, \hat{\Omega}) d \hat{\Omega}}} 
+                        \]
+                        <ul>
+                            <li class="fragment">Uses angular flux <b>&#8594;</b><font color="green"> More angular information is captured in importance map</font></li>
+                            <li class="fragment">Generates scalar flux <b>&#8594;</b><font color="green"> Can be used in existing methods</font></li>
+                            <li class="fragment">Weights by the forward flux <b>&#8594;</b><font color="green"> Direction of particle flow is captured</font></li>
+                        </ul>
+                    </section>
+                    <section>
                         <div id="left">
                             <img height="400" src="./images/omega/maze2MadjG00.png">
                             <p align="center">Adjoint Flux</p>
@@ -531,6 +487,15 @@
                             </p></font>
                         </div>
                     </section>
+                    <section>
+                        <h3>Through Open Visualization and Analysis Science Can be:</h3>
+                        <div id="left">
+                        <li class="fragment">Accessible</li>
+                        <li class="fragment">Transparent</li>
+                        <li class="fragment">Reproducible</li>
+                        <li class="fragment">Democratized</li>
+                        </div>
+                    </section>
                 </section>
                 <section data-transition="convex"> 
                     <section>
@@ -575,7 +540,7 @@
                         <img height="600" src="./images/general/System2.svg">
                     </section>
                     <section>
-                        <h3>Some of our Software:</h3>
+                        <h3>Some of our Software in ARFC:</h3>
                         </br>
                         <div id="left">
                         <font size="6">
@@ -588,6 +553,20 @@
                             </font>
                         </div>
                     </section>
+                </section>
+				    <section data-background-color="#D73F09"
+                        style="background: rgba(255, 255, 255, 0.80);">
+                    <h3>Thank You!</h3>
+                    <h4>Madicken Munk</h4>
+                    <font size="5">mail:mmunk2[at]illinois.edu &nbsp; &nbsp; &nbsp; &nbsp; github:@munkm
+                    <br/>
+                    <a href="https://munkm.github.io/2023-04-10-OSU">https://munkm.github.io/2023-04-10-OSU</a>
+                    <br/>
+                    </font>
+                    </br>
+                    <font size="4">
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tools for Transformation: Computational Methods and Modeling in Nuclear Engineering</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://munkm.github.io" property="cc:attributionName" rel="cc:attributionURL">Madicken Munk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/munkm/2023-04-10-OSU" rel="dct:source">https://github.com/munkm/2023-04-10-OSU</a>.
+                    </font>
                 </section>
                 <section data-transition="convex"> 
                     <section>
@@ -613,20 +592,6 @@
                         <img height="120" class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png">
                         </div>
                     </section>
-                </section>
-				    <section data-background-image="https://wallpaperaccess.com/full/439060.jpg"
-                        style="background: rgba(255, 255, 255, 0.80);">
-                    <h3>Thank You!</h3>
-                    <h4>Madicken Munk</h4>
-                    <font size="5">mail:mmunk2[at]illinois.edu &nbsp; &nbsp; &nbsp; &nbsp; github:@munkm
-                    <br/>
-                    <a href="https://munkm.github.io/2023-04-10-OSU">https://munkm.github.io/2023-04-10-OSU</a>
-                    <br/>
-                    </font>
-                    </br>
-                    <font size="4">
-                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tools for Transformation: Computational Methods and Modeling in Nuclear Engineering</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://munkm.github.io" property="cc:attributionName" rel="cc:attributionURL">Madicken Munk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/munkm/2023-04-10-OSU" rel="dct:source">https://github.com/munkm/2023-04-10-OSU</a>.
-                    </font>
                 </section>
                 <section>
                     <section data-background-image="./images/rover/NASA_cropped.png" data-background-size="40%" data-background-position="bottom left">
@@ -654,6 +619,104 @@
                             <p align="right"><a href="http://munkm.github.io/papers/munk_mc15.pdf" style="color:black;"><i>Design and feasibility study of a compact neutron source for extraterrestrial geochronology applications</i>, Munk, M., Morgan, L., et. al; ANS M&C 2015</a></p>
                         </font>
                             </footer>
+                    </section>
+                </section>
+                <section data-transition="convex">
+                    <section>
+                        <img height="600" src="./images/general/System1e.svg">
+                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_long.svg">
+                        <img class="fragment" style="position:absolute; left:9.66%" height="600" src="./images/general/System1_longa.svg">
+                    </section>
+                    <section>
+                        <img height="500" src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2013/08/WebSideRight.png">
+                    </section>
+                    <section>
+                        <h3>The PB-FHR MK-1 Design</h3>
+                        <div id="right">
+                        <img height="375" src="./images/PBFHR/RC_90cut_Neutronics.svg">
+                        </div>
+                        <div id="left">
+                            <font size="6">
+                            <li>236 MWth core</li>
+                            <li>300 C/HM fueled pebbles, 19.99% enrichment</li>
+                            <li>FLiBe coolant, enriched to 99.999 wt% Li6</li>
+                            <li>Power density 23.0 MW/$m^3$</li>
+                            <li>Buoyant pebble fuel</li>
+                            <li>Online refueling, annular core</li>
+                            <li>Central reflector houses control rod guide tubes</li>
+                            </font>
+                        </div>
+                        <footer align="left">
+                        <font size="2">
+                            <br><br>
+                            <p>Andreades, C., Cisneros, A. T., Choi, J. K., Chong, A. Y. K., Fratoni, M., Hong, S.,
+                            ... & Munk, M. (2014). Technical description of the ‘Mark 1’pebble-bed
+                            fluoride-salt-cooled high-temperature reactor (PB-FHR) power plant.
+                            Department of Nuclear Engineering, UC Berkeley, Report UCBTH-14-002.</p>
+                            <p>Andreades, Charalampos, et al. "Design Summary of the Mark-I Pebble-Bed,
+                            Fluoride Salt–Cooled, High-Temperature Reactor Commercial Power Plant."
+                            Nuclear Technology 195.3 (2016): 223-238.</p>
+                        </font></footer>
+                    </section>
+                    <section>
+                        <h3>Central Reflector Lifetime Estimates</h3>
+                        <img height="500" src="./images/PBFHR/StressMises.gif">
+                    </section>
+                    <section>
+                        <h3>Key Takeaways from the Lifetime Estimate</h3>
+                        <div>
+                            <font size="6">
+                                <b>My work:</b> Created a novel tool to couple neutronics/strucutral mechanics</br>
+                                <b>Result:</b> Lifetime estimated, reflector redesigned, Kairos power startup </br>
+                                <b>Skills:</b> Data Cleaning, Automation, Software Development </br>
+                                <b>Potential:</b> Use optimization techniques to converge on core component design that maximizes lifetime
+                            </font>
+                        </div>
+                        <footer align="left">
+                        <font size="2">
+                            <p>Munk, Madicken. An analysis of Radiation-Induced Stresses of a Graphite Central Reflector in a Pebble Bed Fluoride Salt-Cooled Reactor Core. Diss. University of California Berkeley, 2013.</p>
+                        </font></footer>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Steel Beam in Concrete</h2>
+                        <div>
+                            <img height="500" src="./images/omega/prob1geom.png">
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Steel Beam in Concrete</h2>
+                        <div>
+                            <img height="500" src="./images/omega/RE_prob1.png">
+                        </div>
+                    </section>
+                    <section>
+                            <img height="200" src="./images/omega/Prob1_FOM.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
+                            <img height="250" src="./images/omega/Prob1_time.png">
+                    </section>
+                    <section data-transition="none">
+                            <img height="200" src="./images/omega/Prob1_FOM_highlight.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Figure of Merit results for CADIS and CADIS-$\Omega$ for various tally regions of interest</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Timing results for CADIS and CADIS-$\Omega$</font></p>
+                            <img height="250" src="./images/omega/Prob1_time_highlight.png">
+                    </section>
+                    <section>
+                        <h4>Flux Anisotropies</h4>
+                        <div>
+                            <img height="500" src="./images/omega/prob1M2G26.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center">Anisotropy Metric 2 ( $\phi^{\dagger}_{\Omega}/\phi^{\dagger}$ ) Distribution, Group 26 for Steel Beam in Concrete</font></p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <img height="275" style="margin-bottom:0" src="./images/omega/m4_violin.png">
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Above:</b> Anisotropy Metric 4 Distribution ( $\psi^{c}_{max:avg}/\psi^{\dagger}_{max:avg}$ ), by Energy Group, in Regions where the Contributon Flux is High</font></p>
+                            <p style="margin-top:0; margin-bottom:0;"><font size="3" align="center"><b>Below:</b> Trend Results for Anisotropy Metric 4 as Related to the Ratio of Relative Errors $RE_{\Omega}/RE_{CADIS}$</font></p>
+                            <img height="275" style="margin-top:0" src="./images/omega/m4_stats.png">
+                        </div>
                     </section>
                 </section>
 			</div>
